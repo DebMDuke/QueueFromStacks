@@ -14,17 +14,17 @@ import java.util.Stack;
 import java.util.NoSuchElementException;
 
 public class QueueFromStacks<T> {
-    private Stack<T> stack1;    // back of queue
-    private Stack<T> stack2;    // front of queue
+    private Stack<T> entryStack;    // back of queue
+    private Stack<T> reorderingStack;    // front of queue
 
     // create an empty queue
     public QueueFromStacks() {
-        stack1 = new Stack<T>();
-        stack2 = new Stack<T>();
+        entryStack = new Stack<T>();
+        reorderingStack = new Stack<T>();
     }
 
     // move all items from stack1 to stack2
-    private void moveStack1ToStack2() {
+    private void moveFromEntryStackToReorderingStack() {
 
     }
 
